@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>Detalles de la Tarea</mat-card-title>
+    <mat-card-content>
+      <div *ngIf="task">
+        <h2>{{ task.title }}</h2>
+        <p><strong>Descripción:</strong> {{ task.description }}</p>
+        <p><strong>Estado:</strong> {{ task.status }}</p>
+        <button mat-raised-button color="primary" (click)="editTask(task.id)">Editar</button>
+        <button mat-raised-button color="warn" (click)="deleteTask(task.id)">Eliminar</button>
+        <button mat-raised-button (click)="goBack()">Volver</button>
+      </div>
+      <div *ngIf="!task">
+        <p>Cargando detalles de la tarea...</p>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  

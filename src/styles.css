@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e1d4c8; 
+}
+
+
+.mat-card {
+  margin: 20px; 
+}
+
+.mat-form-field {
+  width: 100%; 
+}
+
+button {
+  margin-top: 20px; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #e1d4c8;
+  border-radius: 8px;
+  background-color: #e1d4c8;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+mat-form-field {
+  margin-bottom: 16px;
+}
+
+button {
+  margin-top: 16px;
+}
+
+mat-error {
+  color: red;
+  font-size: 0.8em;
+}
+
+@media (max-width: 600px) {
+  form {
+      margin: 10px;
+      padding: 10px;
+  }
+
+  button {
+      font-size: 0.9em;
+  }
+}
